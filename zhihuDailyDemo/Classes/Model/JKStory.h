@@ -13,9 +13,9 @@
 /**配图数组 */
 @property (nonatomic, copy) NSArray *images;
 
-//这里用id不妥。但在.m文件中，实现+replacedKeyFromPropertyName方法没成功
+//对应返回结果中的id字段
 /**日报id */
-@property (nonatomic, assign) NSUInteger id;
+@property (nonatomic, copy) NSString *ID;
 
 /**日报标题 */
 @property (nonatomic, copy) NSString *title;

@@ -11,18 +11,11 @@
 
 @implementation JKStory
 
-//+ (NSDictionary *)objectClassInArray
-//{
-//    return @{
-//             @"images" : @"NSString"
-//             };
-//}
-
-//+ (NSDictionary *)replacedKeyFromPropertyName
-//{
-//    return @{
-//             @"sid" : @"id"
-//             };
-//}
+- (NSDictionary *)replacedKeyFromPropertyName
+{
+    return @{
+            @"ID" : @"id"
+             };
+}
 
 @end

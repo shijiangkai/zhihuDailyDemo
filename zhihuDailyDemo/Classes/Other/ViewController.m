@@ -113,7 +113,7 @@
     cell.story = self.storiesArrayM[index];
     JKStoryWebViewController *storyWebViewController = [[JKStoryWebViewController alloc] init];
 
-    storyWebViewController.storyID = [NSString stringWithFormat:@"http://news-at.zhihu.com/api/4/news/%zd", cell.story.id];
+    storyWebViewController.storyID = [NSString stringWithFormat:@"http://news-at.zhihu.com/api/4/news/%@", cell.story.ID];
     [self.navigationController pushViewController:storyWebViewController animated:YES];
 }
 
